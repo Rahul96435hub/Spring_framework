@@ -1,0 +1,40 @@
+class singleton
+{
+	// datamember must be static 
+	private static singleton singleton_instance =null;
+	public String s;
+	private singleton()
+	{
+		s = "Hello How are You";
+	}
+	public static singleton singleton()
+	{
+		if (singleton_instance == null)
+		{
+			singleton_instance = new singleton();
+		}
+		return singleton_instance;
+	}
+}
+class ABC
+{
+
+public static void main(String args[])
+{
+	// instantiating singleton class with variable x
+	singleton x = singleton.singleton();
+	// instantiating singleton class with variable you
+	singleton y = singleton.singleton();
+	System.out.println(x.s);
+	System.out.println(y.s);
+}
+}
+
+
+/*
+D:\java\this>javac Test.java
+
+D:\java\this>java ABC
+Hello How are You
+Hello How are You 
+*/
