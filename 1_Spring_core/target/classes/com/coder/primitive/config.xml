@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+   <bean name = "st1" class="com.coder.primitive.Student">
+   		<!--<property name="id" value="101"></property>-->
+   		<!--<property name="id" >
+   		 <value>Coder</value>
+   		</property> -->
+   		<!--<property name="id" value="101"/> -->
+     <property name="name" value="Coder">
+   	</property>
+  		 <property name="address" value="India">
+   	</property>
+    </bean>
+    
+    <bean name = "st2" class="com.coder.primitive.Student">
+   		<property name="id" value="102">
+   		</property>
+     <property name="name" value="Rahul">
+   		</property>  	
+  		 <property name="address" value="USA">
+   			</property>
+   	
+    </bean>
+
+</beans>
