@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+<bean class="com.coder.ci.Certificate" name="ce" >
+<constructor-arg value="1"/>
+<constructor-arg value="java"/>
+
+</bean>
+
+   <bean class="com.coder.ci.Student" name="st">
+   <constructor-arg value="0" type="int" />
+   <constructor-arg value="coder" />
+    <constructor-arg value="India" />
+     <constructor-arg>
+     <list>
+     <value>java</value>
+     <value>paython</value>
+     </list>
+     
+     </constructor-arg>
+     <constructor-arg ref="ce"/>
+   </bean>
+   
+</beans>
